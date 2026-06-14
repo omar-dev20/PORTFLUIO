@@ -179,6 +179,7 @@ ul{
   inline-size: 750px;
  }
 }
+
 @media (min-width:992px){
  .container{
   inline-size: 980px;
@@ -274,28 +275,16 @@ a:last-child .fa-solid{
 }
 #toggleBtn {
     transition: var(--main-transition);
-    display: inline-block; 
+    width: 5px;
+    padding-block: 15px;
+    margin: auto; 
 }
 
 #toggleBtn.clicked {
-    transform: rotate(180deg);
-    color: var(--accent);
-}
-#toggleBtn:hover {
-    transform: rotate(180deg);
-}
-a:last-child .fa-solid:hover{
-      color: var(--accent);
-      transition: var(--main-transition);
-      -webkit-transition: var(--main-transition);
-      -moz-transition: var(--main-transition);
-      -ms-transition: var(--main-transition);
-      -o-transition: var(--main-transition);
-      transform: rotate(180deg);
-      -webkit-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      -o-transform: rotate(180deg);
+ transform: rotate(180deg);
+ transition: var(--main-transition);
+ color: var(--accent);
+
 }
 }
 }
@@ -835,10 +824,17 @@ i{
   background-color: var(--primary);
   z-index: 1001;
 }
-@media (max-width:767px) {
+@media (max-width:993px) {
   .scrollar{
-    top: 110px;
+    top: 130px;
   }
   
 }
+@media (max-width:767px) {
+  .scrollar{
+    top: 128px;
+  }
+  
+}
+
 
