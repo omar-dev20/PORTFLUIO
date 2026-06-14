@@ -76,6 +76,7 @@ toggleBtn.addEventListener('click', () => {
         img.style.marginTop = '50px';
         if (!secondNav) {
             secondNav = document.createElement('nav');
+            secondNav.classList.add('sac-links');
             const secondNavUl = document.createElement('ul');
             
             const links = [
@@ -100,20 +101,21 @@ toggleBtn.addEventListener('click', () => {
                     padding: 10px;
                 `;
                 a.addEventListener('click', () => {
-                    secondNav.style.display = 'none';
                     toggleBtn.classList.remove('clicked');
                     toggleBtn.classList.replace('fa-xmark', 'fa-bars');
+                     toggleBtn.classList.add('clicked');
+                    secondNav.style.display = 'none';
+
                 });
 
                 li.appendChild(a);
                 secondNavUl.appendChild(li);
             });
-
             secondNav.appendChild(secondNavUl);
             document.body.appendChild(secondNav);
             secondNav.style.cssText = `
                 position: fixed;
-                top: 100px; 
+                top: 120px; 
                 left: 0;
                 width: 100%;
                 background-color: rgba(5, 8, 16, 0.95);
