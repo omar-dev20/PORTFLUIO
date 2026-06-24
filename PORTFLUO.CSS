@@ -434,6 +434,7 @@ a:last-child .fa-solid {
   background-color: #1f408d0f;
   border-radius: 20px;
   overflow: hidden;
+   margin:7px;
   display: flex;
   flex-direction: column;
   transition: 0.3s;
