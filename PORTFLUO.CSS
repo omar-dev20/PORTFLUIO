@@ -8,7 +8,7 @@ body {
   font-family: "Cairo", sans-serif;
   margin: 0;
   padding: 0;
-  height: 755px;
+  height: 750px;
   background-color: var(--background);
   overflow-x: hidden;
 }
