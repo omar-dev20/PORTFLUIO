@@ -8,9 +8,14 @@ body {
   font-family: "Cairo", sans-serif;
   margin: 0;
   padding: 0;
-  height: 800px;
+  height: 750px;
   background-color: var(--background);
   overflow-x: hidden;
+}
+@media (min-width: 768px){
+body{
+height:800px;
+}
 }
 
 html {
