@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="PORTFLUO.CSS" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OMAR SOLIMAN</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <meta name="description" content="omar soliman - professional web developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://omar-dev20.github.io/PORTFLUIO/" />
+    <meta property="og:title" content="Omar Soliman - Front End Developer" />
+    <meta property="og:description" content="Front-End Developer specializing in responsive websites." />
+    <meta property="og:image" content="images/landing.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link rel="shortcut icon" href="images/landing.jpg" type="image/x-icon" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/portfluo-icon.png" alt="logo" />
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#Home">home</a></li>
+                    <li><a href="#Skills">skills</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#Projects">projects</a></li>
+                    <li class="active"><a href="#contact-me">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a><i id="toggleBtn" class="fa-solid fa-bars"></i></a>
+    </header>
+
+    <main>
+        <article>
+            <section class="landing" id="Home">
+                <div class="container">
+                    <div class="info load-hidden">
+                        <h3>Hello, Im</h3>
+                        <h1><span class="text">Omar</span> Soliman</h1>
+                        <h2>Front End Developer</h2>
+                        <p>
+                            I'm Omar, a Web Developer dedicated to building sleek,
+                            responsive, and high-performance websites. I focus on clean code
+                            and exceptional user experiences.
+                        </p>
+                    </div>
+                    <div class="imge load-hidden">
+                        <img src="images/landing.jpg" alt="Omar Landing" loading="eager" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills load-hidden" id="Skills">
+                <h2 class="title">my skills</h2>
+                <div class="container filter-tabs-wrapper">
+                    <button class="filter-btn active" data-category="all">
+                        <span>All</span>
+                    </button>
+
+                    <button class="filter-btn" data-category="languages">
+                        <span>Languages</span>
+                    </button>
+
+                    <button class="filter-btn" data-category="frameworks">
+                        <span>Frameworks & Styling</span>
+                    </button>
+
+                    <button class="filter-btn" data-category="tools">
+                        <span>Libraries & Tools</span>
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="skills-grid">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"
+                            data-category="languages">
+                            <div class="skill-card">
+                                <i class="fa-brands fa-html5"></i>
+                                <p>HTML</p>
+                            </div>
+                        </a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"
+                            data-category="languages">
+                            <div class="skill-card">
+                                <i class="fa-brands fa-css3"></i>
+                                <p>CSS</p>
+                            </div>
+                        </a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                            data-category="languages">
+                            <div class="skill-card">
+                                <i class="fa-brands fa-square-js"></i>
+                                <p>JavaScript</p>
+                            </div>
+                        </a>
+
+                        <a href=" https://www.typescriptlang.org/" target="_blank" data-category="languages">
+                            <div class="skill-card">
+                                <img src="https://cdn.simpleicons.org/typescript/ffffff" alt="TypeScript Icon"
+                                    class="tailwind-icon" />
+                                <p>TypeScript</p>
+                            </div>
+                        </a>
+
+                        <a href=" https://tailwindcss.com/" target="_blank" data-category="frameworks">
+                            <div class="skill-card">
+                                <img src="https://cdn.simpleicons.org/tailwindcss/ffffff" alt="Tailwind Icon"
+                                    class="tailwind-icon" />
+                                <p>Tailwind</p>
+                            </div>
+                        </a>
+                        <a href="https://reactjs.org/" target="_blank" data-category="tools">
+                            <div class="skill-card">
+                                <i class="fa-brands fa-react"></i>
+                                <p>React</p>
+                            </div>
+                        </a>
+                        <a href=" https://github.com/" target="_blank" data-category="tools">
+                            <div class="skill-card">
+                                <i class="fa-brands fa-github"></i>
+                                <p>Github</p>
+                            </div>
+                        </a>
+                        <a href=" https://git-scm.com/" target="_blank" data-category="tools">
+                            <div class="skill-card">
+                                <i class="fa-brands fa-git-alt"></i>
+                                <p>Git</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about load-hidden" id="about">
+                <h2 class="title about-title">About <strong>me</strong></h2>
+                <div class="container">
+                    <div class="imge">
+                        <img src="images/landing.jpg" alt="About Omar" loading="eager" />
+                    </div>
+                    <div class="about-content">
+                        <p>
+                            I am a 20-year-old <strong>Front-End Developer</strong> with a
+                            passion for building high-performance, visually stunning, and
+                            user-centric web applications. My journey in web development
+                            started with a curiosity about how the web works, which quickly
+                            evolved into a career focused on crafting seamless digital
+                            experiences.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project" id="Projects">
+                <h2 class="title load-hidden">my projects</h2>
+                <div class="container">
+                    <div class="box load-hidden">
+                        <img src="images/madar.png" alt="Light on the stomach" loading="lazy" />
+                        <h2>madar</h2>
+                        <p>
+                            Modern e-commerce platform featuring dynamic products and a live
+                            responsive cart.
+                        </p>
+                        <a class="btn" href="https://omar-dev20.github.io/madar/" target="_blank">visit site</a>
+                    </div>
+                    <div class="box load-hidden">
+                        <img src="images/guess.png" alt="Kasper" loading="lazy" />
+                        <h2>guess word</h2>
+                        <p>
+                            Interactive word game featuring dynamic countdown timers and a
+                            local leaderboard.
+                        </p>
+                        <a class="btn" href="https://omar-dev20.github.io/guess/" target="_blank">visit site</a>
+                    </div>
+                    <div class="box load-hidden">
+                        <img src="images/memorey.png" alt="YouTube Clone" loading="lazy" />
+                        <h2>Memory Game</h2>
+                        <p>
+                            Responsive card matching game featuring smooth flip animations
+                            and a move counter.
+                        </p>
+                        <a class="btn" href="https://omar-dev20.github.io/memorey-game" target="_blank">visit site</a>
+                    </div>
+                    <div class="box load-hidden">
+                        <img src="images/hangman.png" alt="Omar World" loading="lazy" />
+                        <h2>Hangman Game</h2>
+                        <p>
+                            Classic hangman puzzle featuring robust JavaScript logic and
+                            full keyboard support.
+                        </p>
+                        <a class="btn" href="https://omar-dev20.github.io/hangman/" target="_blank">visit site</a>
+                    </div>
+                    <div class="box load-hidden">
+                        <img src="images/Khatera.png" alt="Khatera-ai" loading="lazy" />
+                        <h2>Khatera-ai</h2>
+                        <p>
+                            Bilingual AI notes app featuring user authentication, speech recognition, and dual themes.
+                        </p>
+                        <a class="btn" href="https://khatera-ai.vercel.app/" target="_blank">visit site</a>
+                    </div>
+                     <div class="box load-hidden">
+                        <img src="images/To-do.png" alt="Portfolio" loading="lazy" />
+                        <h2>To Do List</h2>
+                        <p>
+                        Responsive task management app featuring local storage persistence, progress tracking, and dark themes.
+                        </p>
+                        <a class="btn" href="https://omar-dev20.github.io/to-do-list/" target="_blank">visit site</a>
+                    </div>
+            </section>
+
+            <section class="contact load-hidden" id="contact-me">
+                <h2 class="title">Contact Me</h2>
+                <div class="container">
+                    <form action="">
+                        <div class="main-input">
+                            <input type="text" placeholder="Your Name" name="name" required />
+                            <input type="email" placeholder="Your Email" name="email" required />
+                        </div>
+                        <input type="text" placeholder="Last Name" name="last-name" />
+                        <textarea placeholder="Your Message" name="message" required></textarea>
+                        <button class="btn glow">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/portfluo-icon.png" alt="Omar Soliman Logo" />
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#contact-me">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Me</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100088252033206&sk=directory_personal_details"
+                            target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=201273031441&text&type=phone_number&app_absent=0"
+                            target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/seaf.omar/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+20 127 303 1441</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>oboss5527@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Egypt</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2026 <span>Omar Soliman</span>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="scrollar"></div>
+    <script src="portfulo.js" defer></script>
+</body>
+
+</html>

@@ -1,8 +1,8 @@
 let btn = document.querySelector('.back-to-top');
-window.onscroll = function() {
+window.onscroll = function () {
     if (window.scrollY > 500) {
-       btn.style.opacity = "1";
-       btn.style.pointerEvents = "auto";
+        btn.style.opacity = "1";
+        btn.style.pointerEvents = "auto";
     } else {
         btn.style.opacity = "0";
     }
@@ -23,7 +23,7 @@ document.querySelectorAll('.load-hidden').forEach(el => {
 const targets = document.querySelectorAll('a[href^="#"], .back-to-top');
 
 targets.forEach(element => {
-    element.addEventListener('click', function(e) {
+    element.addEventListener('click', function (e) {
         e.preventDefault();
         let targetId = this.getAttribute('href');
         let targetPosition = 0;
@@ -63,7 +63,7 @@ targets.forEach(element => {
 let el = document.querySelector('.scrollar');
 let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 window.addEventListener('scroll', () => {
-    let scrollTop = document.documentElement.scrollTop; 
+    let scrollTop = document.documentElement.scrollTop;
     el.style.width = scrollTop / height * 100 + '%';
 });
 let toggleBtn = document.getElementById('toggleBtn');
@@ -78,7 +78,7 @@ toggleBtn.addEventListener('click', () => {
             secondNav = document.createElement('nav');
             secondNav.classList.add('sac-links');
             const secondNavUl = document.createElement('ul');
-            
+
             const links = [
                 { text: 'Home', href: '#Home' },
                 { text: 'Skills', href: '#Skills' },
@@ -103,7 +103,7 @@ toggleBtn.addEventListener('click', () => {
                 a.addEventListener('click', () => {
                     toggleBtn.classList.remove('clicked');
                     toggleBtn.classList.replace('fa-xmark', 'fa-bars');
-                     toggleBtn.classList.add('clicked');
+                    toggleBtn.classList.add('clicked');
                     secondNav.style.display = 'none';
 
                 });
@@ -144,4 +144,43 @@ toggleBtn.addEventListener('click', () => {
         toggleBtn.classList.replace('fa-xmark', 'fa-bars');
         if (secondNav) secondNav.style.display = 'none';
     }
+});
+
+const cards = document.querySelectorAll('.filter-btn');
+
+cards.forEach(card => {
+    card.addEventListener('click', (e) => {
+        cards.forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+        const category = card.dataset.category;
+        console.log(category);
+        if (category === 'all') {
+            document.querySelectorAll("a[data-category]").forEach(el => {
+                el.classList.remove("load-show");
+                el.classList.add("load-hidden");
+                el.style.display = "block";
+                setTimeout(() => {
+                    el.classList.remove("load-hidden");
+                    el.classList.add("load-show");
+                }, 100);
+            });
+            return;
+        }
+        document.querySelectorAll("a[data-category]").forEach((el) => {
+            if ( el.dataset.category === category) {
+
+                el.classList.remove("load-show");
+                el.classList.add("load-hidden");
+                el.style.display = "block";
+                setTimeout(() => {
+                    el.classList.remove("load-hidden");
+                    el.classList.add("load-show");
+                }, 100);
+
+            } else {
+                el.classList.remove("load-show", "load-hidden");
+                el.style.display = "none";
+            }
+        });
+    });
 });
